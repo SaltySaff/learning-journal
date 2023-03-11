@@ -1,22 +1,39 @@
+/* html / body */
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
-/* typography */
-
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    
+    min-width: 365px;
 }
 
+
+/* general typography */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+
+/* layout */
+
+/* logo */
 .site-logo {
     font-family: 'Roboto', sans-serif;
     font-size: 0.84rem;
     font-weight: 700;
 }
 
+
+/* nav */
 .nav-links {
     display: flex;
     gap: 1em;
@@ -25,17 +42,8 @@ body {
     text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
-/* structure */
-
-body {
-    min-width: 365px;
-}
-
+/* header */
 header {
     display: flex;
     align-items: center;
@@ -43,6 +51,8 @@ header {
     padding: 0 1.5em;
 }
 
+
+/* hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -70,15 +80,12 @@ header {
     color: white;
 }
 
-.hero-title a:hover,
-.hero-title a:focus {
-    text-decoration: underline;
-}
-
 .hero-text {
     margin: 0
 }
 
+
+/* blog */
 .blog {
     display: flex;
     flex-direction: column;
@@ -125,6 +132,8 @@ header {
 
 }
 
+
+/* view more */
 .view-more-container {
     text-align: center;
     margin-top: 0.5em;
@@ -137,6 +146,8 @@ header {
     font-weight: 700;
 }
 
+
+/* footer */
 .footer-container {
     display: flex;
     flex-direction: column;
