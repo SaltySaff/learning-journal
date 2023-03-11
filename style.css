@@ -66,6 +66,15 @@ header {
     margin: 0;
 }
 
+.hero-title a {
+    color: white;
+}
+
+.hero-title a:hover,
+.hero-title a:focus {
+    text-decoration: underline;
+}
+
 .hero-text {
     margin: 0
 }
