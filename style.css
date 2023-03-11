@@ -11,9 +11,7 @@ body {
 }
 
 main {
-    width: 365px;
-    /* temporary */
-    margin: 0 auto;
+
 }
 
 /* general typography */
@@ -101,7 +99,6 @@ header {
     justify-content: center;
     padding: 0 0.8em;
     margin: 2em 0;
-    max-width: 350px;
     color: #151515;
 }
 
@@ -110,6 +107,13 @@ header {
     margin-top: 1em;
     object-fit: cover;
     object-position: 50% 80%;
+}
+
+/* about me */
+
+.about-me-avatar {
+    width: 11.3em;
+    border-radius: 50%;
 }
 
 /* blog content */
