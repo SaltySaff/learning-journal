@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer type="module"></script>
     <title>Learning Journal</title>
@@ -15,12 +18,31 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li>Home</li>
-                <li>About Me</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="hero">
+            <time class="hero-date">July 23, 2022</time>
+            <h1 class="hero-title">My new journey as a bootcamp student.</h1>
+            <p class="hero-text">
+                After several months of learning in the Frontend Developer Career Path, 
+                I've made the big jump over to the Bootcamp to get expert code reviews 
+                of my Solo Projects projects and meet like-minded peers.
+            </p>
+        </section>
+        <section class="blog">
+            <img src="blog-img" alt="picture of a laptop on a desk">
+            <time class="blog-date">July 23, 2022</time>
+            <p class="blog-text">
+                I'm excited to start a new learning journey as a Scrimba 
+                Bootcamp student! After several months of learning in the
+                Frontend Developer Career Path.
+            </p>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
