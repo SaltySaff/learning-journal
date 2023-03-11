@@ -7,9 +7,14 @@ body {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    min-width: 365px;
+    align-items: center;
 }
 
+main {
+    width: 365px;
+    /* temporary */
+    margin: 0 auto;
+}
 
 /* general typography */
 a {
@@ -58,13 +63,16 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     gap: 0.5em;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(images/hero-img.jpg);
-    background-size: cover;
     background-position: 50% 90%;
     height: 18em;
-    color: white;
     box-sizing: border-box;
     padding: 1em;
+}
+
+.hero-bg-img {
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(images/hero-img.jpg);
+    background-size: cover;
 }
 
 .hero-date {
@@ -82,6 +90,50 @@ header {
 
 .hero-text {
     margin: 0
+}
+
+/* hero blog  */
+
+.hero-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    padding: 0 0.8em;
+    margin: 2em 0;
+    max-width: 350px;
+    color: #151515;
+}
+
+.hero-blog-img {
+    height: 12em;
+    margin-top: 1em;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+/* blog content */
+
+.article {
+    padding: 0 0.8em;
+}
+
+.blog-content-title,
+.blog-content-text {
+    font-size: 1em;
+}
+
+.blog-content-title {
+    margin-top: 0;
+}
+
+
+/* recent posts */
+
+.recent-posts-container {
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: 700;
 }
 
 
