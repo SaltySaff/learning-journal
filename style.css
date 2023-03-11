@@ -118,11 +118,14 @@ header {
 
 .view-more-container {
     text-align: center;
-    padding: 1.5em 0;
+    margin-top: 0.5em;
+    padding-bottom: 2.5em;
 }
 
 .view-more-container a {
+    font-size: 1rem;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 .footer-container {
