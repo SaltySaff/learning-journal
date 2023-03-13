@@ -219,10 +219,13 @@ header {
     padding: 1.5em 0;
 }
 
-.view-more-container a {
+.view-more-container button {
     font-size: 1rem;
     text-decoration: underline;
     font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 

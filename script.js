@@ -37,11 +37,13 @@ function toggleMoreLess() {
 
     if (!expanded) {
         render(9);
+        blog.lastElementChild.scrollIntoView({ behavior: 'smooth' });
         viewMore.textContent = 'View Less'
         expanded = true;
     } else {
         render(6)
-        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        blog.firstElementChild.scrollIntoView({ behavior: 'smooth' });
+        blog.scrollTop = blog.scrollHeight;
         viewMore.textContent = 'View More'
         expanded = false;
     }
