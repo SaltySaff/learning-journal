@@ -3,6 +3,8 @@ import { articles } from '/data.js'
 const blog = document.querySelector('.blog')
 const viewMore = document.querySelector('.view-more')
 
+let expanded = false;
+
 viewMore.addEventListener('click', toggleMoreLess)
 
 function generateHtml(articles, count) {
@@ -31,14 +33,15 @@ function generateHtml(articles, count) {
 
 function toggleMoreLess() {
     const viewMore = document.querySelector('.view-more')
-    let expanded = false;
+    
 
     if (!expanded) {
-        render(6);
+        render(9);
         viewMore.textContent = 'View Less'
         expanded = true;
     } else {
-        render(3) 
+        render(6)
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
         viewMore.textContent = 'View More'
         expanded = false;
     }
@@ -49,4 +52,4 @@ function render(articleCount) {
     blog.innerHTML = generateHtml(articles, articleCount)
 }
 
-render(3)
+render(6)
