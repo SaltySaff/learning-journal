@@ -166,10 +166,11 @@ header {
 .blog {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, calc(75% - 1em)));
+    justify-content: center;
     padding: 1em;
-    gap: 1em;
+    row-gap: 1em;
+    column-gap: 1em;
     box-sizing: border-box;
     
 }
@@ -260,6 +261,18 @@ header {
     .main-content-container
     {
         width: 75%;
-        max-width: 1190px;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .blog {
+        grid-template-columns: repeat(auto-fill, minmax(300px, calc(50% - 1em)));
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog {
+        grid-template-columns: repeat(auto-fill, minmax(300px, calc(33% - 1em)));
     }
 }
